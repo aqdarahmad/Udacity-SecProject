@@ -1,0 +1,11 @@
+.card{
+    background: linear-gradient(180deg , #fff , #fbfbfd);
+    border-radius: 12px;
+    padding: 1.25rem;
+    min-height: 120px;
+    box-shadow: 0 6px 18px rgba(11,22,40,0.04);
+    &:hover {transform: translateY(-6px); box-shadow: 0 12px 30px rgba(11 , 22,40,0.07)}
+
+    &__title{margin: 0 0 .5rem; font-size: 1.05rem}
+    &__body {margin: 0; color: #444;}
+}

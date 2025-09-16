@@ -1,0 +1,24 @@
+
+@use '../base/variables' as variables ;
+@use '../base//mixins.scss' as *;
+@use 'sass:color';
+
+.hero{
+    display: flex;
+    gap: variables.$gap;
+    align-items: center;
+    padding: 3rem 0;
+    scroll-snap-align:start;
+
+
+    &__content{flex: 1}
+    &__title{font-size: clamp(1.4rem , 3.4vw , 2.6rem); margin: 0 0 .5rem ;}
+    &__subtitle{margin: 0 0 1.25rem; color: color.adjust(variables.$muted,$lightness: 10%);}
+    &__actions{display: flex; gap:.75rem}
+    &__media{flex:1; text-align: center }
+
+    @include respond(medium){
+        flex-direction: column-reverse;
+        &__media{width: 100% ;}
+    }
+}

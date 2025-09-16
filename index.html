@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>SafePass - Responsive BEM Project</title>
+    <link rel="stylesheet" href="dist/main.css" />
+  </head>
+
+  <body>
+    <!--NAVIGATION-->
+    <header class="header" role="banner">
+      <nav class="nav container" aria-label="Main navigation">
+       
+        <ul class="nav__list">
+          <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
+         <li class="nav__item"><a href="#features" class="nav__link">Features</a></li>
+         <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+         
+        </ul>
+
+        <a class="logo" href="#" aria-label="SafePass Home">
+            <img src="assets/logo.jpeg" alt="SafePass logo" width="48" height="48">
+        </a>
+      </nav>
+    </header>
+
+    <main id="home" class="main">
+
+
+
+  
+    <!--Hero Section-->
+    <section class="hero container" id="hero" aria-labelledby="hero-title">
+     <div class="hero__content">
+        <h1 id="hero-title " class="hero__title">Road & Checkpoint</h1>
+        <p class="hero__subtitle">Live map with real-time updates.</p>
+        <div class="hero__actions">
+            <a class="btn btn_primary" href="#features">Learn More</a>
+            <a class="btn btn_secondary" href="#contact">Contact</a>
+        </div>
+     </div>
+     <figure class="hero__media">
+          <img src="assets/images/hero-photo.jpeg" alt="Map" width="48" height="48">
+     </figure>
+    </section>
+
+  
+
+   <section class="features container" id="features" aria-labelledby="features-title">
+    <h2 id="features-title">Features</h2>
+   
+     <div class="features__grid">
+         <article class="card"></article>
+       <h3 class="card__title">Live Updates</h3>
+       <p class="card__body">Telegram-based ,real-time info</p>
+       </article>
+           
+           <article class="card"></article>
+       <h3 class="card__title">Responsive</h3>
+       <p class="card__body">Optimized for phones and tablets.</p>
+       </article>
+
+
+           <article class="card"></article>
+       <h3 class="card__title">Accessible</h3>
+       <p class="card__body">keyword & screen-reader only</p>
+       </article>
+
+     </div>
+    </section>
+
+
+    <section class="contact container" id="contact" aria-labelledby="content-title">
+      <h2 id = "content-title">Contact</h2>
+      <form class="form" acction="#" method="post" aria-label="Content form">
+        <label class="form_label" for="name">Name</label>
+        <input class="form_input" id="name" name="name" type="text"/>
+
+
+    <label class="form_label" for="emil">Email</label>
+     <input class="form_input" id="email" name="emil" type="email"/>
+
+     <button class="btn btn_primary" type="submit">Send</button>
+
+      </form>
+    </section>
+
+    </main>
+
+    <!--Footer-->
+
+    <footer class="footer" role="contentinfo">
+
+     <div class="container footer__inner">
+        <p>@ <span id="year"></span>SafePass - demo project.</p>
+        <nav class="footer__nav" aria-label=" Footer navigation">
+            <a class="footer__link " href="#">Privacy</a>
+             <a class="footer__link " href="#">Terms</a>
+
+        </nav>
+
+     </div>
+    </footer>
+  </body>
+</html>

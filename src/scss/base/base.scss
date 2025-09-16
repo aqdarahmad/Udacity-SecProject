@@ -1,0 +1,23 @@
+
+@use 'variables' as variables;
+
+
+
+*{box-sizing: border-box}
+:root{
+    color-scheme: light dark;
+}
+html,body{height: 100%}
+body{
+
+    color: #111;
+    -webkit-font-smoothing:antialiased;
+    -moz-osx-font-smoothing:grayscale;
+}
+.container{
+    margin: 0 auto;
+    width: 90%;
+    max-width: variables.$max-width;
+    
+ 
+}

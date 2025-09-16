@@ -1,0 +1,34 @@
+@use '../base/variables' as variables; 
+.header{
+    position: sticky;
+    top: 0;
+    z-index: 40;
+    background: rgba(255,255,255,0.75);
+    backdrop-filter: blur(6px);
+    transition: height 220ms ease , padding 220ms ease , background 240ms ease;
+
+
+    & .nav{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 1 rem 0;
+
+        &__list{display: flex; gap: variables.$gap; list-style: none; padding: 0; margin: 0}
+        &__item {padding: 0 }
+        &__link{text-decoration: none; font-weight: 600;padding: 6px 8px; transition: background .18s ease ,transform .18s ease;}
+        &__link:hover {transform: translateY(-2px);}
+
+       }
+
+       &.header_scrolled{
+        background: rgba(255,255,255,0.9);
+        padding: 0.25rem 0;
+        box-shadow: 0 4px 20px rgba(11,22,40,0.06);
+
+        .nav {
+            padding: 0.25rem 0;
+        }
+       }
+
+}

@@ -1,0 +1,19 @@
+@use '../base/variables' as variables;
+
+.nav_links {
+    color: #494141;
+}
+.btn {
+    display: inline-block;
+    padding: 0.6rem 1rem;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: transform .18s ease , background .18s ease;
+
+}
+
+.btn_primary{background: variables.$primary-color; color: #fff}
+.btn_secondry{background: transparent; border:  1px solid rgba(0, 0,0, 0.06)}
+
+button:active , a:active {transform: translate(1px)}
