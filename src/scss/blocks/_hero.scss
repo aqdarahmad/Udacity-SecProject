@@ -11,8 +11,8 @@
     scroll-snap-align:start;
 
 
-    &__content{flex: 1}
-    &__title{font-size: clamp(1.4rem , 3.4vw , 2.6rem); margin: 0 0 .5rem ;}
+    &__content{flex: 1; max-width: 600px;}
+    &__title{font-size: clamp(1.4rem , 3.4vw , 2.6rem); margin: 0 0 .5rem ; line-height: 1.2;}
     &__subtitle{margin: 0 0 1.25rem; color: color.adjust(variables.$muted,$lightness: 10%);}
     &__actions{display: flex; gap:.75rem}
     &__media{flex:1; text-align: center }
@@ -21,4 +21,9 @@
         flex-direction: column-reverse;
         &__media{width: 100% ;}
     }
+}
+.features__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1.5rem;
 }

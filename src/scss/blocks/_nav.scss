@@ -1,7 +1,12 @@
 @use '../base/variables' as variables;
 
-.nav_links {
+.nav_link{
     color: #494141;
+    text-decoration: none;
+    font-weight: 500;
+}
+.nav_link:hover{
+    color: blue;
 }
 .btn {
     display: inline-block;
@@ -13,7 +18,54 @@
 
 }
 
-.btn_primary{background: variables.$primary-color; color: #fff}
-.btn_secondry{background: transparent; border:  1px solid rgba(0, 0,0, 0.06)}
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+ 
+    padding: 1rem;
+}
+
+
+.btn_primary{
+    background: variables.$primary-color;
+     color: #fff
+}
+.btn_primary:hover{
+ border-color: black;
+ transform: scale(1.02);
+}
+
+.btn_secondary{background: transparent; border:  1px solid rgba(0, 0,0, 0.06)}
 
 button:active , a:active {transform: translate(1px)}
+.footer {
+    background-color: rgb(117, 89, 89);
+    color: #fffdfd;
+    padding: 2rem 0;
+    font-size: 0.9rem;
+
+  &__inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    width: 90%;
+    margin: 0 auto;
+  }  
+  &__nav{
+    display: flex;
+    gap: 1rem;
+  }
+  &__link {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.2s ease;
+  }
+  p {
+    margin: 0;
+  }
+
+  
+}

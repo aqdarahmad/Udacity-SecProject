@@ -1,9 +1,10 @@
 @use '../base/variables' as variables; 
 .header{
+    width: 100%;
     position: sticky;
     top: 0;
     z-index: 40;
-    background: rgba(255,255,255,0.75);
+    background: rgba(183, 138, 138, 0.75);
     backdrop-filter: blur(6px);
     transition: height 220ms ease , padding 220ms ease , background 240ms ease;
 
@@ -12,7 +13,7 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
-        padding: 1 rem 0;
+        padding: 1rem 0;
 
         &__list{display: flex; gap: variables.$gap; list-style: none; padding: 0; margin: 0}
         &__item {padding: 0 }
